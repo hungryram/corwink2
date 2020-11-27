@@ -26,14 +26,10 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: slideshow_title
-    type: textarea
-    default: ''
+  - name: heading
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: markdown
     label: Heading
   - name: body
     type: textarea

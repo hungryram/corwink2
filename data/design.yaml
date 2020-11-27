@@ -8,8 +8,10 @@ home_slideshow:
   - "/uploads/splash2020.jpg"
   slideshow_title: BLACK FRIDAY SALE
   slideshow_subtitle: Luxury Lashes by Corwink
-  body: ''
+  body: Shop our collections for special black friday deals and receive **Free Shipping**
+    over $50
   image: https://res.cloudinary.com/hungryram19/image/upload/v1606462968/corinne-renteria/corwinkcosmetics/bright_pqqj43.jpg
+  heading: BLACK FRIDAY SALE
 colors:
   enable_black_menu_items: true
   header_background_color: "#FFFFFF"

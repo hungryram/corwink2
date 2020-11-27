@@ -26,10 +26,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: slideshow
-    type: image_gallery
-    config: {}
-    label: Slideshow
   - name: slideshow_title
     type: textarea
     default: ''
@@ -38,13 +34,22 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-    label: Slide Show Title
-  - name: slideshow_subtitle
-    type: text
+    label: Heading
+  - name: body
+    type: textarea
+    default: ''
     config:
       required: false
-    label: Slideshow Subtitle
-  label: Home Slideshow
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Body
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  label: Hero Image
 - name: colors
   type: field_group
   config: {}

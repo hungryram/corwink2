@@ -12,6 +12,7 @@ home_slideshow:
     over $50
   image: https://res.cloudinary.com/hungryram19/image/upload/v1606462968/corinne-renteria/corwinkcosmetics/bright_pqqj43.jpg
   heading: BLACK FRIDAY SALE
+  side_image: https://res.cloudinary.com/hungryram19/image/upload/v1606463353/corinne-renteria/corwinkcosmetics/product_gcgrty.png
 colors:
   enable_black_menu_items: true
   header_background_color: "#FFFFFF"

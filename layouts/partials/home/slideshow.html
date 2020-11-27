@@ -1,4 +1,4 @@
-<section class="hero is-fullheight" style="background:url(uploads/bright.jpg) no-repeat center;background-size:cover">
+<section class="hero is-fullheight" style="background:url({{ $.Site.Data.design.home_slideshow.image }}) no-repeat center;background-size:cover">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
         {{ partial "global/navbar" . }}
@@ -10,17 +10,17 @@
         <div class="columns is-vcentered">
             <div class="column">
                 <div class="is-block">
-                    <h1 class="title has-text-left is-size-1-mobile" style="color:#232D60">BLACK FRIDAY SALE</h1>
+                    <h1 class="title has-text-left is-size-1-mobile" style="color:#232D60">{{ .Site.Data.design.home_slideshow.heading }}</h1>
                     <h4 class="title is-5 date-hero has-text-white">Starting November 27th - 29th</h4>
                     <hr class="hero-bar">
-                    <p class="pt-5 has-text-left is-size-5" style="color;#232D60">Shop our collections for special black friday deals and receive <span class="has-text-weight-bold is-underline">Free Shipping</span> over $50</p>
+                    <p class="pt-5 has-text-left is-size-5" style="color;#232D60">{{ .Site.Data.design.home_slideshow.body | markdownify }}</p>
                 </div>
                 <div class="is-block mt-5">
                     <a href="/products" class="hero-btn">SHOP NOW</a>
                 </div>
             </div>
             <div class="column">
-               <img src="/uploads/product.png" alt="">
+               <img src="{{ .Site.Data.design.home_slideshow.side_image }}" alt="">
             </div>
         </div>
       </div>

@@ -9,6 +9,10 @@ body .content a {
 	text-decoration: underline;
 }
 
+h1.title.intro-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
 
 body .content #share-buttons a {
 	color: #D282D9;
@@ -17,7 +21,7 @@ body .content #share-buttons a {
 }
 
 body h1.title, body h2.title, body h3.title, body h4.title, body h5.title, body h6.title {
-	font-family: Raleway, sans-serif;
+	font-family: Montserrat, sans-serif;
 	font-weight: 500
 }
 body h1.subtitle, body h2.subtitle, body h3.subtitle, body h4.subtitle, body h5.subtitle, body h6.subtitle {
@@ -98,6 +102,19 @@ a.cart-button {
     cursor: pointer;
     border-radius: 15px;
 	border: none;
+}
+
+button.quick-add {
+	background-image: linear-gradient(to right, #b28ae6 0%, #7FD7EF 51%, #8c51d8 100%);
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    border-radius: 15px;
+	border: none;
+	padding: 8px 12px;
 }
 
 a.account-button {

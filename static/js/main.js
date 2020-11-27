@@ -17,9 +17,9 @@ $('.responsive-slide').slick({
   dots: true,
   infinite: true,
   speed: 1000,
-  slidesToShow: 3,
+  slidesToShow: 4,
   autoplay: true,
-  slidesToScroll: 3,
+  slidesToScroll: 4,
   pauseOnHover: true,
   responsive: [
     {

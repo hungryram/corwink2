@@ -1,8 +1,8 @@
 ---
 logo_and_title:
-  logo: "/uploads/corwinklogo.png"
+  logo: https://res.cloudinary.com/hungryram19/image/upload/v1606462829/corinne-renteria/corwinkcosmetics/corwinklogo_c539hx.png
   company_title: Corwink
-  favicon: "/uploads/favicon.png"
+  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1606462839/corinne-renteria/corwinkcosmetics/favicon_sypa3f.png
 home_slideshow:
   slideshow:
   - "/uploads/splash2020.jpg"

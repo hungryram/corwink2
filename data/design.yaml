@@ -20,7 +20,7 @@ colors:
 footer:
   footer_background_color: "#000000"
   enable_black_text: false
-  footer_logo: "/uploads/whitelogo.png"
+  footer_logo: https://res.cloudinary.com/hungryram19/image/upload/v1606462829/corinne-renteria/corwinkcosmetics/corwinklogo_c539hx.png
   footer_bio: Our mission is to keep the highest quality of luxury lashes you love
     at an affordable price while providing unique options that fit your lash needs.
 banner:

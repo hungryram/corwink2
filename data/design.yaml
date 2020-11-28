@@ -18,7 +18,7 @@ colors:
   header_background_color: "#FFFFFF"
   page_background: "#F6F6F6"
 footer:
-  footer_background_color: "#000000"
+  footer_background_color: "#eec5f4"
   enable_black_text: false
   footer_logo: "/uploads/whitelogo.png"
   footer_bio: Our mission is to keep the highest quality of luxury lashes you love

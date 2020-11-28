@@ -180,6 +180,20 @@ div.branding {
 	padding: 20px;
 }
 
+/* COLUMN FEATURED */
+
+div.column-featured h2.title {
+	background: #D87AE1;
+	color: #fff;
+	padding: 12px;
+}
+
+@media screen and (max-width:768px) {
+	div.column-featured .tile.is-child {
+		height: 200px;
+	}
+}
+
 /* FEATURED HOME */
 div.featured {
 	transition: all .8s ease;
@@ -397,13 +411,11 @@ footer p {
 	line-height: 24px;
 	padding-bottom: 15px;
 	font-family: Montserrat, sans-serif;
-	font-weight: 100
 }
 footer ul li {
 	padding-bottom: 15px;
 	font-family: Montserrat, sans-serif;
 	font-size: 13px;
-	font-weight: 100
 }
 .footer-links ul li {
 	display: inline-block;

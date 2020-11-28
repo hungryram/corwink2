@@ -2,8 +2,8 @@
 <footer style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.footer.footer_background_color) }}">
    <div class="section pt-0">
      <div class="container">
-       <div class="columns">
-         <div class="column">
+       <div class="columns is-mobile">
+         <div class="column is-4-mobile">
            <img src="{{ .Site.Data.design.footer.footer_logo }}" alt="{{ .Site.Data.profile.company_name }}" width="200">
          </div>
          <div class="column has-text-right">
@@ -45,26 +45,25 @@
           <li><a href="{{ . }}" target="_blank" title="Youtube" {{ if $.Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>Youtube</a></li>
           {{end}}
         </ul>
-        <p class="has-text-black">{{ .Site.Data.design.footer.footer_bio }}</p>
+        <p class="has-text-black is-size-7">{{ .Site.Data.design.footer.footer_bio }}</p>
 
          </div>
        </div>
      </div>
    </div>
    <div class="container">
-    <hr style="background:#2c2c2c;height:1px">
     <div class="columns">
         <div class="column has-text-centered-mobile">
             <div class="bottom-credit">
-                <small>&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}</small> &middot; <a href="https://hungryram.com" target="_blank">Website Developed by Hungry Ram</a>
+                <small class="is-size-7">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}</small> &middot; <a href="https://hungryram.com" target="_blank" class="is-size-7">Website Developed by Hungry Ram</a>
               </div>
         </div>
         <div class="column has-text-right has-text-centered-mobile">
             <div class="footer-links">
                 <ul>
-                    <li><a href="/shipping-and-cancellation">Shipping and Cancellations</a></li>
-                    <li><a href="/returns-exchanges">Returns and Exchanges</a></li>
-                    <li><a href="/accessibility">Accessibility</a></li>
+                    <li><a href="/shipping-and-cancellation" class="is-size-7">Shipping and Cancellations</a></li>
+                    <li><a href="/returns-exchanges" class="is-size-7">Returns and Exchanges</a></li>
+                    <li><a href="/accessibility" class="is-size-7">Accessibility</a></li>
                 </ul>
             </div>
         </div>

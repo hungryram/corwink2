@@ -1,32 +1,51 @@
-<div class="product__thumbnail__image ml-2 mr-2">
-    <div style="background:url({{ with .Params.gallery }}{{ index . 0 }}{{ end }}) no-repeat center;background-size:cover;height:35vh"></div>
-    <div class="content mt-3 mb-3">
-        <div class="columns">
-            <div class="column">
-                <div>
-                    <h1 class="title is-6 mb-0">{{ .Title }}</h1>
-                    <p class="is-size-7 has-text-weight-medium">{{ if .Params.on_sale }}${{ lang.NumFmt 2 .Params.sale_price }} <span class="sale-price">${{ lang.NumFmt 2 .Params.price }} </span>{{ else }}${{ lang.NumFmt 2 .Params.price }}{{ end }}</p>
+<a href="{{ .Permalink }}">
+    <div class="product__thumbnail__image ml-2 mr-2">
+        <div style="background:url({{ with .Params.gallery }}{{ index . 0 }}{{ end }}) no-repeat center;background-size:cover;height:35vh">
+            <div class="level tag-wrapper is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <div>
+                      {{ if .Params.on_sale }}<span class="sale-tag">Sale</span>{{ end }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="content mt-3 mb-3">
+            <div class="columns">
+                <div class="column">
+                    <div>
+                        <h1 class="title is-6 mb-0">{{ .Title }}</h1>
+                        <p class="is-size-7 has-text-weight-medium">{{ if .Params.on_sale }}${{ lang.NumFmt 2 .Params.sale_price }} <span class="sale-price">${{ lang.NumFmt 2 .Params.price }} </span>{{ else }}${{ lang.NumFmt 2 .Params.price }}{{ end }}</p>
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <button class="snipcart-add-item quick-add"
+                    data-item-id="{{ .Params.sku }}"
+                    data-item-price="{{ if .Params.on_sale }}{{ lang.NumFmt 2 .Params.sale_price }}{{ else }}{{ lang.NumFmt 2 .Params.price }}{{  end}}"
+                    data-item-url="{{ .RelPermalink }}"
+                    data-item-image="{{ with .Params.gallery }}{{ index . 0 }}{{ end }}"
+                    data-item-name="{{ .Title }}"
+                    {{ with .Params.customOptions }}
+                    {{- range $index, $option := . -}}
+                    {{ safeHTMLAttr (partial (printf "custom-options/%s" .template) (dict "Index" (add 1 $index) "Option" $option)) }}
+                    {{- end -}}
+                {{ end }}
+                    >
+                    + Add to Cart
+                    </button>
                 </div>
             </div>
-            <div class="column has-text-centered">
-                <button class="snipcart-add-item quick-add"
-                data-item-id="{{ .Params.sku }}"
-                data-item-price="{{ if .Params.on_sale }}{{ lang.NumFmt 2 .Params.sale_price }}{{ else }}{{ lang.NumFmt 2 .Params.price }}{{  end}}"
-                data-item-url="{{ .RelPermalink }}"
-                data-item-image="{{ with .Params.gallery }}{{ index . 0 }}{{ end }}"
-                data-item-name="{{ .Title }}"
-                {{ with .Params.customOptions }}
-                {{- range $index, $option := . -}}
-                {{ safeHTMLAttr (partial (printf "custom-options/%s" .template) (dict "Index" (add 1 $index) "Option" $option)) }}
-                {{- end -}}
-            {{ end }}
-                >
-                + Add to Cart
-                </button>
+            <div class="columns">
+    
             </div>
         </div>
-        <div class="columns">
-
-        </div>
     </div>
-</div>
+</a>
